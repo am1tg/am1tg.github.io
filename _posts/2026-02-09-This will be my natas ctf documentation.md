@@ -5,15 +5,15 @@ let's do a ctf together
 "we are all starting somewhere"
 username: natas0
 password: natas0
-![[Pasted image 20260902223930.png]]
-<img width="1917" height="946" alt="image" src="https://github.com/user-attachments/assets/16dae232-b8fe-46fc-a3f9-acccbcd23d04" />
-
+<img width="1917" height="953" alt="image" src="https://github.com/user-attachments/assets/107635d9-72b5-42a3-ba9d-47053c886d03" />
 lets view page source by right clicking and then clicking:
-![[Pasted image 20260902224316.png]]
+<img width="323" height="45" alt="image" src="https://github.com/user-attachments/assets/9308a172-45e9-491e-aac0-c9d65da476ea" />
 And BOOM!
-![[Pasted image 20260902224500.png]]
+<img width="1108" height="369" alt="image" src="https://github.com/user-attachments/assets/0610c216-42fd-4b76-bff8-78af30434e87" />
 The Password for natas1
 ### level 1:
 username: natas1
 password: scfWG6qNEIdzqVyfRwEGXyNUfFZkZeQ7
-![[Pasted image 20260902224738.png]]
+We are getting this page:
+<img width="1917" height="946" alt="image" src="https://github.com/user-attachments/assets/0a6d0952-7ec2-4185-9e2c-33d920ab1337" />
+
