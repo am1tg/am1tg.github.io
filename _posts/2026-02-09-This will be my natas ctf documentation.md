@@ -5,7 +5,7 @@ let's do a ctf together
 "we are all starting somewhere"
 username: natas0
 password: natas0
-<img width="1917" height="953" alt="image" src="https://github.com/user-attachments/assets/107635d9-72b5-42a3-ba9d-47053c886d03" />
+<img width="2000" height="800" alt="image" src="https://github.com/user-attachments/assets/107635d9-72b5-42a3-ba9d-47053c886d03" />
 lets view page source by right clicking and then clicking:
 <img width="323" height="45" alt="image" src="https://github.com/user-attachments/assets/9308a172-45e9-491e-aac0-c9d65da476ea" />
 And BOOM!
