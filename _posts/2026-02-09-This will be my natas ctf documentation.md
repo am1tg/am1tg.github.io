@@ -117,16 +117,42 @@ We get the next password!!!<br>
 "Never say never"<br>
 username: natas9<br>
 password: UdxmI27dTaXmnd1rxKQTfws6jihTdcQ9<br>
-<img width="1100" height="520" alt="image" src="https://github.com/user-attachments/assets/cc1ba990-e6e0-480e-81d5-b96433a1dca8" />
-source code:
-<img width="1062" height="583" alt="image" src="https://github.com/user-attachments/assets/8191838d-b72d-4d69-87c0-bce152285001" />
-this is probably the most vulnerable code possible:
-to prove it I have entered the input:
-<img width="432" height="56" alt="image" src="https://github.com/user-attachments/assets/598466ef-3d74-462e-a65b-2652e53e2f70" />
-and got:
-<img width="544" height="735" alt="image" src="https://github.com/user-attachments/assets/d6bd02f6-0416-4c3e-a345-9faba2b6369e" />
-
-
+<img width="1100" height="520" alt="image" src="https://github.com/user-attachments/assets/cc1ba990-e6e0-480e-81d5-b96433a1dca8" /><br>
+source code:<br>
+<img width="1062" height="583" alt="image" src="https://github.com/user-attachments/assets/8191838d-b72d-4d69-87c0-bce152285001" /><br>
+this is probably the most vulnerable code possible:<br>
+to prove it I have entered the input:<br>
+<img width="432" height="56" alt="image" src="https://github.com/user-attachments/assets/598466ef-3d74-462e-a65b-2652e53e2f70" /><br>
+and got:<br>
+<img width="544" height="735" alt="image" src="https://github.com/user-attachments/assets/d6bd02f6-0416-4c3e-a345-9faba2b6369e" /><br>
+but I will play their game and use the grep command given to me:<br>
+I will submit this string -> "-r -E '\b[0-9a-zA-Z]{32}\b' * /etc ;"<br>
+this will look for any sting that contains letters and numbers in the length of 32 (like the other passwords)<br>
+in the etc directory (because this was where the password was in level 7 and i didn't want to search every file on the server even though i could)<br>
+this is the output:<br>
+<img width="828" height="599" alt="image" src="https://github.com/user-attachments/assets/ccdd8331-52c9-4089-a180-8c24c737560a" /><br>
+we got the password for natas10<br>
+### Level 10:<br>
+"Smells like teen spirit"<br>
+username: natas10<br>
+password: EgjlkzB6E8LJyf2Obt4q7q4ewt5ZWSNv<br>
+<img width="1100" height="520" alt="image" src="https://github.com/user-attachments/assets/f2e0e104-d005-4338-899f-1a6be21ac7f1" /><br>
+let's hope it is more secure this time...<br>
+<img width="1070" height="669" alt="image" src="https://github.com/user-attachments/assets/57a7dbd3-fa78-4e69-9d78-dc8acf2d3b4b" /><br>
+ok looks like we need to get rid of the ";" from the last injection:<br>
+but it still works:<br>
+<img width="860" height="627" alt="image" src="https://github.com/user-attachments/assets/77830001-a4db-480c-8384-9620e14676b9" /><br>
+maybe we were over qualified for the last level ¯\_(ツ)_/¯<br>
+### Level 11:<br>
+"Welcome to the jungle"<br>
+username: natas11<br>
+password: VUMQDmuITOEHzhviLE5V0VG9cPMQkyxd<br>
+<img width="1100" height="520" alt="image" src="https://github.com/user-attachments/assets/1edf62af-5acb-47d5-b786-b481420903d2" /><br>
+looks like we can change the background color <br>
+we do!<br>
+<img width="727" height="290" alt="image" src="https://github.com/user-attachments/assets/ac9d0601-ee21-4e42-9d95-3ba9db8d330e" /><br>
+source code:<br>
+<img width="1026" height="901" alt="image" src="https://github.com/user-attachments/assets/0bbe193e-94e1-4c0b-b5cf-d8588e419818" /><br>
 
 
 
