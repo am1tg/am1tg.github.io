@@ -5,4 +5,5 @@ let's do a ctf together
 "we are all starting somewhere"\
 username: natas0\
 password: natas0\
-<img width="650" height="300" alt="image" src="https://github.com/user-attachments/assets/c1e64567-2224-4dc1-97cb-9d9508ce3854" />
+<img width="1917" height="953" alt="image" src="https://github.com/user-attachments/assets/4094b0c6-e6b8-4373-a82b-62869c28de71" />
+
