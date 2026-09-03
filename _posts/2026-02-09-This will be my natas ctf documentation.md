@@ -102,6 +102,29 @@ We would get the password for natas8!<br>
 username: natas8<br>
 password: ugXL95KQmUAJJj6bMezOlBNDyI9Imwkc<br>
 <img width="1100" height="520" alt="image" src="https://github.com/user-attachments/assets/a18a80c1-18e4-4943-927c-b4f66112daed" /><br>
+another secret...<br>
+source code:<br>
+<img width="1082" height="622" alt="image" src="https://github.com/user-attachments/assets/483e0042-a412-4630-bc44-45019957ca8d" /><br>
+we can see the encoded secret and we can see the encoding function, let's reveres this so we decode the $encodedSecret to get the plain text secret:<br>
+so the regular function is doing: base64 -> reveres str -> binary to hex<br>
+we need to do the opposite so: from binary to hex -> reveres str -> from base64<br>
+This is the recipe and the output:<br>
+<img width="1106" height="592" alt="image" src="https://github.com/user-attachments/assets/eddc93a6-fa99-4930-9fea-f37702737a89" /><br>
+when we submit it ("oubWYf2kBq"):<br>
+<img width="621" height="225" alt="image" src="https://github.com/user-attachments/assets/5d2082b8-bf82-4746-bb1a-2c47fe977aa8" /><br>
+We get the next password!!!<br>
+### Level 9:<br>
+"Never say never"<br>
+username: natas9<br>
+password: UdxmI27dTaXmnd1rxKQTfws6jihTdcQ9<br>
+<img width="1100" height="520" alt="image" src="https://github.com/user-attachments/assets/cc1ba990-e6e0-480e-81d5-b96433a1dca8" />
+source code:
+<img width="1062" height="583" alt="image" src="https://github.com/user-attachments/assets/8191838d-b72d-4d69-87c0-bce152285001" />
+this is probably the most vulnerable code possible:
+to prove it I have entered the input:
+<img width="432" height="56" alt="image" src="https://github.com/user-attachments/assets/598466ef-3d74-462e-a65b-2652e53e2f70" />
+and got:
+<img width="544" height="735" alt="image" src="https://github.com/user-attachments/assets/d6bd02f6-0416-4c3e-a345-9faba2b6369e" />
 
 
 
