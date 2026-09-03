@@ -149,10 +149,46 @@ username: natas11<br>
 password: VUMQDmuITOEHzhviLE5V0VG9cPMQkyxd<br>
 <img width="1100" height="520" alt="image" src="https://github.com/user-attachments/assets/1edf62af-5acb-47d5-b786-b481420903d2" /><br>
 looks like we can change the background color <br>
-we do!<br>
 <img width="727" height="290" alt="image" src="https://github.com/user-attachments/assets/ac9d0601-ee21-4e42-9d95-3ba9db8d330e" /><br>
+we do!<br>
 source code:<br>
 <img width="1026" height="901" alt="image" src="https://github.com/user-attachments/assets/0bbe193e-94e1-4c0b-b5cf-d8588e419818" /><br>
+by this code when i send this:<br>
+<img width="1205" height="175" alt="image" src="https://github.com/user-attachments/assets/9fd8d117-88e8-480b-a488-35f97d1bb18c" /><br>
+what a should be given back as a cookie is the cookie when the values are as the default:<br>
+<img width="434" height="19" alt="image" src="https://github.com/user-attachments/assets/e385b0fa-85cf-417d-a2ac-66c86353ef45" /><br>
+so i wrote this:<br>
+<img width="1100" height="500" alt="image" src="https://github.com/user-attachments/assets/299bc633-59b2-486e-b3c6-9d6c5905707d" /><br>
+so this -> {"showpassword":"no","bgcolor":"#ffffff"}<br>
+is the value of one side of the xor encryption<br>
+to get the other side we will look at the cookie we got back:<br>
+<img width="670" height="140" alt="image" src="https://github.com/user-attachments/assets/e2c2be04-6d5f-4b5a-b0c3-0b87a117be01" /><br>
+EGAgHwQ1IxYYMSQYGSZxTUksPFVHYDEQCC0%2FGBlgaVVIJDURDSQ1VRY%3D<br>
+this is of course after base 64 encoding so let's decode this:<br>
+<img width="1100" height="500" alt="image" src="https://github.com/user-attachments/assets/ad9334f2-9aae-4f6e-81da-ab3597e58dcf" /><br>
+now that we have the values before and after the xor function all we have to do is xor them a we will be left with the xor key.<br>
+So i wrote this script:<br>
+<img width="1384" height="238" alt="image" src="https://github.com/user-attachments/assets/f0ecf4b4-ad24-4c2d-bbf5-d157acb51399" /><br>
+yes I used IDLE for a bit of extra challenge :)<br>
+and this is the output:<br>
+<img width="788" height="35" alt="image" src="https://github.com/user-attachments/assets/91607645-0026-47fd-8c6d-10ce7efad7c5" /><br>
+clearly the repitting key is -> "kBSw"<br>
+so now I can create my own cookie:<br>
+<img width="521" height="491" alt="image" src="https://github.com/user-attachments/assets/dbee12db-1947-4dea-a854-27029dcb9547" /><br>
+and put it in my next request:<br>
+<img width="1211" height="206" alt="image" src="https://github.com/user-attachments/assets/5b695254-a5ac-43dc-a012-1d160b622f19" /><br>
+So we get this:<br>
+<img width="652" height="270" alt="image" src="https://github.com/user-attachments/assets/c3e2aa91-4601-4ae3-a4ed-a87023a41c19" /><br>
+We should have a cookie party<br>
+### Level 12:<br>
+"Welcome to the jungle"<br>
+username: natas12<br>
+password: EAGkE8uzFTxeoTT2mMst9Xy7PX6guEng<br>
+
+
+
+
+
 
 
 
