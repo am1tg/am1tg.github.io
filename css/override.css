@@ -1,3 +1,24 @@
+/* Make content full width */
+.wrapper {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.post-content {
+  width: 100%;
+  padding: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  max-width: 100%;
+}
+
 hr {
   margin-top: 30px;
   margin-bottom: 20px;
