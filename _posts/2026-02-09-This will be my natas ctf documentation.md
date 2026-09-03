@@ -142,7 +142,7 @@ let's hope it is more secure this time...<br>
 ok looks like we need to get rid of the ";" from the last injection:<br>
 but it still works:<br>
 <img width="860" height="627" alt="image" src="https://github.com/user-attachments/assets/77830001-a4db-480c-8384-9620e14676b9" /><br>
-maybe we were over qualified for the last level ¯\_(ツ)_/¯<br>
+maybe we were over qualified for the last level ¯\\_(ツ)_/¯<br>
 ### Level 11:<br>
 "Welcome to the jungle"<br>
 username: natas11<br>
