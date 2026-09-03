@@ -1,7 +1,7 @@
-/* Make content full width */
+/* Make content full width with side margins */
 .wrapper {
   max-width: 100%;
-  padding: 0;
+  padding: 0 40px;
   margin: 0;
 }
 
