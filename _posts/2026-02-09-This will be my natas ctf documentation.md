@@ -233,7 +233,7 @@ in [wikipedia](https://en.wikipedia.org/wiki/List_of_file_signatures) I found th
 lets try and add it to my webshell file from last level<br>
 <img width="637" height="203" alt="image" src="https://github.com/user-attachments/assets/3bfc82a4-9a78-4225-929a-6f558016a1ee" /><br>
 it didn't work :(<br>
-let's use IDLE to fix it:<br>
+since you aren't supposed to open .jpg files with notepad let's try and use IDLE:<br>
 <img width="678" height="586" alt="image" src="https://github.com/user-attachments/assets/e2bed258-dbf6-4d4d-9034-b80b19405121" /><br>
 this gave me a file to upload:<br>
 <img width="856" height="556" alt="image" src="https://github.com/user-attachments/assets/54474b84-fe0a-4224-97a3-b702b50e768b" /><br>
@@ -247,15 +247,82 @@ and we found it!<br>
 "Surf the web"<br>
 username: natas14<br>
 password: A0xXu2x9FW8rb8OSQ4ei6n5VBbLUz8h8<br>
-
-
-
-
-
-
-
-
-
+<img width="1100" height="520" alt="image" src="https://github.com/user-attachments/assets/d958d829-850e-4387-832a-53adbb9f5857" /><br>
+source code:<br>
+<img width="1063" height="648" alt="image" src="https://github.com/user-attachments/assets/1d07d645-5430-482c-818d-20003b766a13" /><br>
+A query to check if username and password exists and all we are checking is for anything to return<br>
+this is mysql so "#" is the char to use to comment out the rest of the query<br>
+<img width="645" height="224" alt="image" src="https://github.com/user-attachments/assets/b5253d4b-7c7d-48ea-93e0-362a458b6765" /><br>
+this shuold do the job...<br>
+<img width="640" height="188" alt="image" src="https://github.com/user-attachments/assets/01b3f083-55de-4fbf-ac74-80071adc1870" /><br>
+nice!<br>
+### Level 15:<br>
+"Surf the web"<br>
+username: natas15<br>
+password: GB6USCJYJjwLyYhZUNkE1NwDueiTow6g<br>
+<img width="1100" height="520" alt="image" src="https://github.com/user-attachments/assets/aaf341f5-b215-42bb-80c5-3a8661180ed3" /><br>
+checking if user exists<br>
+<img width="1087" height="839" alt="image" src="https://github.com/user-attachments/assets/baffdb85-822b-4431-b3af-2821592b5c57" /><br>
+all we are able to know is if the user exists or not or if there was an error with the query<br>
+the request:<br>
+<img width="757" height="287" alt="image" src="https://github.com/user-attachments/assets/60ad49fd-1965-47ff-ad9f-19337029ed60" /><br>
+i chose to solve it using this SUBSTRING, this gives me the ability to check for specific parts in the "username" and "password" fields.<br>
+So I can now figure out one char at a time the right password.<br>
+but first I need to check which username has the password in the format we need (length 32 like the other passwords)<br>
+i used the burp suite extension to copy the values as python request:<br>
+<img width="724" height="70" alt="image" src="https://github.com/user-attachments/assets/9c2619a1-feba-426f-840d-de4293ca571e" /><br>
+so I made this script<br>
+<img width="1100" height="530" alt="image" src="https://github.com/user-attachments/assets/e483ae4e-3e14-4816-a194-17c6c477ab25" /><br>
+and got this username:<br>
+<img width="67" height="83" alt="image" src="https://github.com/user-attachments/assets/0ac8b84d-cf9a-4513-966d-3158d2dfea7e" /><br>
+should have seen this one coming...<br>
+so now i can use this script:<br>
+<img width="1100" height="550" alt="image" src="https://github.com/user-attachments/assets/36447313-e908-400f-b51c-5aba147fd563" /><br>
+and get the password!<br>
+<img width="286" height="48" alt="image" src="https://github.com/user-attachments/assets/ea4c945e-315f-49ad-a35a-6ccbe16c0306" /><br>
+### Level 16:<br>
+"Surf the web"<br>
+username: natas16<br>
+password: Xm6XEeRN3zsGjRDqBPmuqAVV65k7e3Gb<br>
+<img width="1100" height="520" alt="image" src="https://github.com/user-attachments/assets/d06045fe-b91e-4346-9952-bef3ba377f6d" /><br>
+source code:<br>
+<img width="1085" height="682" alt="image" src="https://github.com/user-attachments/assets/7a5d4468-6ced-4022-8e9e-ce5337ecb60e" /><br>
+after researching a lot a Realized that the regex misses banning "$" and "()"<br>
+so if I do something like this:<br>
+<img width="644" height="272" alt="image" src="https://github.com/user-attachments/assets/25bac6d6-7f77-4b62-a8f6-8fe0bc9ac7a3" /><br>
+the echo command would run and the output would be used for the grep:<br>
+<img width="637" height="334" alt="image" src="https://github.com/user-attachments/assets/d78f930d-a8f7-48f6-a8bd-e1562f243147" /><br>
+using this logic i chose a word I know is in the dictionary.txt -> "August"<br>
+and used this as input: `$(grep -E ^{guess}.* /etc/natas_webpass/natas17)August`<br>
+if the word August would return i know that grep command returned nothing so the guess i wrong<br>
+and if not i know that the grep found a match in the file that would have the password and I can move on to the next letter <br>
+so again I wrote a script:<br>
+<img width="1100" height="500" alt="image" src="https://github.com/user-attachments/assets/8d58b0c1-b103-45ec-afaf-e63b030f2970" /><br>
+and running it:<br>
+<img width="429" height="531" alt="image" src="https://github.com/user-attachments/assets/83de0669-bb9c-444a-bc83-55d0676a679a" /><br>
+Gave me this beautiful triangle and the password!<br>
+### Level 17:<br>
+"Surf the web"<br>
+username: natas17<br>
+password: KLdAM3VZux8o6TbkbhuaG5KtYjI77tfx<br>
+<img width="1100" height="520" alt="image" src="https://github.com/user-attachments/assets/f0d6ea24-66a8-4037-ac22-3c6dc179c15e" /><br>
+source code:<br>
+<img width="1076" height="843" alt="image" src="https://github.com/user-attachments/assets/8f591aa0-767a-4fea-87af-aefb36547b4a" /><br>
+this looks familiar from level 15...<br>
+except this time the echos are commented out :(<br>
+I chose to do it with SLEEP command in mysql.<br>
+The logic is that i check each letter at a time with SUBSTRING like I did in level 15<br>
+but this time if the letter is right i make the server sleep before answering<br>
+this way i know that when the server takes longer to respond it means the letter is right<br>
+so I made this script:<br>
+<img width="1100" height="680" alt="image" src="https://github.com/user-attachments/assets/e80e55c7-a21a-419d-b142-19d3ed7dd9ff" /><br>
+and when i ran it (it worked better in the cmd):<br>
+<img width="307" height="78" alt="image" src="https://github.com/user-attachments/assets/ca414fa7-1c33-4beb-9610-2d4a0e573022" /><br>
+I got the password to natas18!
+### Level 18:<br>
+"Surf the web"<br>
+username: natas18<br>
+password: fDGn2A6Gsc0BUp3bZw0RNXpg0PZt40op<br>
 
 
 I
