@@ -233,9 +233,6 @@ in [wikipedia](https://en.wikipedia.org/wiki/List_of_file_signatures) I found th
 lets try and add it to my webshell file from last level<br>
 <img width="637" height="203" alt="image" src="https://github.com/user-attachments/assets/3bfc82a4-9a78-4225-929a-6f558016a1ee" /><br>
 it didn't work :(<br>
-but I think I know why...<br>
-i edited the file in notepad and notepad is known to add "\\r\\n" for every newline ("Enter pressed") and the command probably see this<br>
-because no one supposed to look at jpg file using notepad.<br>
 let's use IDLE to fix it:<br>
 <img width="678" height="586" alt="image" src="https://github.com/user-attachments/assets/e2bed258-dbf6-4d4d-9034-b80b19405121" /><br>
 this gave me a file to upload:<br>
