@@ -210,10 +210,49 @@ I'm going to run this command -> ` grep -r -E '\b[0-9a-zA-Z]{32}\b' * /etc ;`<br
 because if it ain't broken don't fix it<br>
 <img width="456" height="49" alt="image" src="https://github.com/user-attachments/assets/d4677097-5f71-43c1-90b2-0d2e9def36a4" /><br>
 and we found our next password!<br>
-### Level 12:<br>
-"Welcome to the jungle"<br>
-username: natas12<br>
-password: EAGkE8uzFTxeoTT2mMst9Xy7PX6guEng<br>
+### Level 13:<br>
+"Surf the web"<br>
+username: natas13<br>
+password: g8ba0olAzaSJuyS4gnmbdVVigAICLG1k<br>
+<img width="1917" height="935" alt="image" src="https://github.com/user-attachments/assets/2748675d-ab0b-445e-93af-c1a717cdbd96" /><br>
+source code:<br>
+<img width="711" height="755" alt="image" src="https://github.com/user-attachments/assets/eaac970c-faad-4021-8d9f-5d9c99f6775f" /><br>
+this looks a problem<br>
+```
+else if (! exif_imagetype($_FILES['uploadedfile']['tmp_name'])) {
+        echo "File is not an image";
+}
+```<br>
+lets read about this command<br>
+<https://www.php.net/manual/en/function.exif-imagetype.php><br>
+this site says that:<br>
+<img width="565" height="58" alt="image" src="https://github.com/user-attachments/assets/4ffa17a1-8690-4c5f-b82c-53700b4c675e" /><br>
+let's read about jpg signature:<br>
+in [wikipedia](https://en.wikipedia.org/wiki/List_of_file_signatures) I found this:<br>
+<img width="954" height="144" alt="image" src="https://github.com/user-attachments/assets/f92d3a08-67fc-4f6a-926c-cb248025d134" /><br>
+lets try and add it to my webshell file from last level<br>
+<img width="637" height="203" alt="image" src="https://github.com/user-attachments/assets/3bfc82a4-9a78-4225-929a-6f558016a1ee" /><br>
+it didn't work :(<br>
+but I think I know why...<br>
+i edited the file in notepad and notepad is known to add "\\r\\n" for every newline ("Enter pressed") and the command probably see this<br>
+because no one supposed to look at jpg file using notepad.<br>
+let's use IDLE to fix it:<br>
+<img width="678" height="586" alt="image" src="https://github.com/user-attachments/assets/e2bed258-dbf6-4d4d-9034-b80b19405121" /><br>
+this gave me a file to upload:<br>
+<img width="856" height="556" alt="image" src="https://github.com/user-attachments/assets/54474b84-fe0a-4224-97a3-b702b50e768b" /><br>
+of course i will change the ".jpg" to ".php"<br>
+<img width="638" height="217" alt="image" src="https://github.com/user-attachments/assets/96042f5d-9132-426d-a902-65bcb1dfcbee" /><br>
+we have a webshell!<br>
+again I will use: `grep -r -E '\b[0-9a-zA-Z]{32}\b' /etc`<br>
+and we found it!<br>
+<img width="432" height="45" alt="image" src="https://github.com/user-attachments/assets/e3b68734-ae83-404c-867b-53ba061e9d9e" /><br>
+### Level 14:<br>
+"Surf the web"<br>
+username: natas14<br>
+password: A0xXu2x9FW8rb8OSQ4ei6n5VBbLUz8h8<br>
+
+
+
 
 
 
