@@ -184,7 +184,45 @@ We should have a cookie party<br>
 "Welcome to the jungle"<br>
 username: natas12<br>
 password: EAGkE8uzFTxeoTT2mMst9Xy7PX6guEng<br>
+<img width="1100" height="520" alt="image" src="https://github.com/user-attachments/assets/6be2a730-37f4-44ff-a362-f96fdca20316" /><br>
+looks like we can upload jpeg files now<br>
+source code:<br>
+<img width="704" height="625" alt="image" src="https://github.com/user-attachments/assets/72e0ca1e-207a-4a79-8422-b3791d7a9d0e" /><br>
+lets try and upload a web shell.<br>
+looks like it will give us an href to access our webshell after uploading so we don't have tow worrie about finding it.<br>
+I created the webshell by taking the vulnerable source code from level 9 and making it event more vulnerable:<br>
+<img width="800" height="576" alt="image" src="https://github.com/user-attachments/assets/61bcaa5c-31a7-4580-b45b-8848de12dd96" /><br>
+let's upload it:<br>
+<img width="642" height="182" alt="image" src="https://github.com/user-attachments/assets/9d423575-f431-4dc8-a5a6-4961c2e49e9b" /><br>
+and it didn't work:<br>
+<img width="273" height="230" alt="image" src="https://github.com/user-attachments/assets/a0dda0a1-8178-406e-80e7-454c4b8f0b5f" /><br>
+looks like i missed a part in the source code that changes the file extension to ".jpg" and this is a problem<br>
+<img width="480" height="45" alt="image" src="https://github.com/user-attachments/assets/fe8b9edf-eebd-4363-983d-e59861c5db2d" /><br>
+looks like it takes the file extension from the given upload name:<br>
+<img width="582" height="125" alt="image" src="https://github.com/user-attachments/assets/4cd95adf-794f-4fa5-8f1d-cb42adf824f8" /><br>
+let's look at the upload request:<br>
+<img width="1100" height="370" alt="image" src="https://github.com/user-attachments/assets/49f90293-5b07-4686-9c8e-947388925b67" /><br>
+here is the problem! let's change the ".jpg" to ".php" and send<br>
+<img width="648" height="169" alt="image" src="https://github.com/user-attachments/assets/5ca918b1-fe23-4523-be0f-d47a10a3d3c4" /><br>
+it worked!<br>
+we now have our webshell, excuse me for not changing the txt from level 9 :)<br>
+I'm going to run this command -> ` grep -r -E '\b[0-9a-zA-Z]{32}\b' * /etc ;`<br>
+because if it ain't broken don't fix it<br>
+<img width="456" height="49" alt="image" src="https://github.com/user-attachments/assets/d4677097-5f71-43c1-90b2-0d2e9def36a4" /><br>
+and we found our next password!<br>
+### Level 12:<br>
+"Welcome to the jungle"<br>
+username: natas12<br>
+password: EAGkE8uzFTxeoTT2mMst9Xy7PX6guEng<br>
 
+
+
+
+
+
+
+
+I
 
 
 
