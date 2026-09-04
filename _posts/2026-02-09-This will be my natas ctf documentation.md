@@ -222,7 +222,7 @@ this looks a problem<br>
 else if (! exif_imagetype($_FILES['uploadedfile']['tmp_name'])) {
         echo "File is not an image";
 }
-```<br>
+```
 lets read about this command<br>
 <https://www.php.net/manual/en/function.exif-imagetype.php><br>
 this site says that:<br>
