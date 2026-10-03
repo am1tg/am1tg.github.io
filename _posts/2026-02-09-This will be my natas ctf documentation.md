@@ -395,6 +395,9 @@ password: slOKYGsjlJhaqKliGvrgWAzln0JyrWao<br>
         <img width="880" height="905" alt="image" src="https://github.com/user-attachments/assets/c29250f6-9ba2-48d9-a76c-299131143128" />
         <img width="886" height="908" alt="image" src="https://github.com/user-attachments/assets/4e6b5290-8270-4460-bf9e-f3ff44b25612" />
 </details>
+Like the previous challenges I don't see any way of altering the value in $_SESSION["admin"] to make it 1.<br>
+means that I have to find an already existing admin session and using it.<br>
+
 
 I
 
