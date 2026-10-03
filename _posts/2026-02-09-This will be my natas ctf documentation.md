@@ -151,8 +151,10 @@ password: VUMQDmuITOEHzhviLE5V0VG9cPMQkyxd<br>
 looks like we can change the background color <br>
 <img width="727" height="290" alt="image" src="https://github.com/user-attachments/assets/ac9d0601-ee21-4e42-9d95-3ba9db8d330e" /><br>
 we do!<br>
-source code:<br>
-<img width="1026" height="901" alt="image" src="https://github.com/user-attachments/assets/0bbe193e-94e1-4c0b-b5cf-d8588e419818" /><br>
+<details>
+  <summary>source code</summary><br>
+        <img width="1026" height="901" alt="image" src="https://github.com/user-attachments/assets/0bbe193e-94e1-4c0b-b5cf-d8588e419818" /><br>
+</details>
 by this code when i send this:<br>
 <img width="1205" height="175" alt="image" src="https://github.com/user-attachments/assets/9fd8d117-88e8-480b-a488-35f97d1bb18c" /><br>
 what a should be given back as a cookie is the cookie when the values are as the default:<br>
@@ -186,8 +188,10 @@ username: natas12<br>
 password: EAGkE8uzFTxeoTT2mMst9Xy7PX6guEng<br>
 <img width="1100" height="520" alt="image" src="https://github.com/user-attachments/assets/6be2a730-37f4-44ff-a362-f96fdca20316" /><br>
 looks like we can upload jpeg files now<br>
-source code:<br>
-<img width="704" height="625" alt="image" src="https://github.com/user-attachments/assets/72e0ca1e-207a-4a79-8422-b3791d7a9d0e" /><br>
+<details>
+  <summary>source code</summary><br>
+        <img width="704" height="625" alt="image" src="https://github.com/user-attachments/assets/72e0ca1e-207a-4a79-8422-b3791d7a9d0e" /><br>
+</details>
 lets try and upload a web shell.<br>
 looks like it will give us an href to access our webshell after uploading so we don't have tow worrie about finding it.<br>
 I created the webshell by taking the vulnerable source code from level 9 and making it event more vulnerable:<br>
@@ -215,8 +219,10 @@ and we found our next password!<br>
 username: natas13<br>
 password: g8ba0olAzaSJuyS4gnmbdVVigAICLG1k<br>
 <img width="1917" height="935" alt="image" src="https://github.com/user-attachments/assets/2748675d-ab0b-445e-93af-c1a717cdbd96" /><br>
-source code:<br>
-<img width="711" height="755" alt="image" src="https://github.com/user-attachments/assets/eaac970c-faad-4021-8d9f-5d9c99f6775f" /><br>
+<details>
+  <summary>source code</summary><br>
+        <img width="711" height="755" alt="image" src="https://github.com/user-attachments/assets/eaac970c-faad-4021-8d9f-5d9c99f6775f" /><br>
+</details>
 this looks a problem<br>
 ```
 else if (! exif_imagetype($_FILES['uploadedfile']['tmp_name'])) {
@@ -248,8 +254,10 @@ and we found it!<br>
 username: natas14<br>
 password: A0xXu2x9FW8rb8OSQ4ei6n5VBbLUz8h8<br>
 <img width="1100" height="520" alt="image" src="https://github.com/user-attachments/assets/d958d829-850e-4387-832a-53adbb9f5857" /><br>
-source code:<br>
-<img width="1063" height="648" alt="image" src="https://github.com/user-attachments/assets/1d07d645-5430-482c-818d-20003b766a13" /><br>
+<details>
+  <summary>source code</summary><br>
+        <img width="1063" height="648" alt="image" src="https://github.com/user-attachments/assets/1d07d645-5430-482c-818d-20003b766a13" /><br>
+</details>
 A query to check if username and password exists and all we are checking is for anything to return<br>
 this is mysql so "#" is the char to use to comment out the rest of the query<br>
 <img width="645" height="224" alt="image" src="https://github.com/user-attachments/assets/b5253d4b-7c7d-48ea-93e0-362a458b6765" /><br>
@@ -262,7 +270,10 @@ username: natas15<br>
 password: GB6USCJYJjwLyYhZUNkE1NwDueiTow6g<br>
 <img width="1100" height="520" alt="image" src="https://github.com/user-attachments/assets/aaf341f5-b215-42bb-80c5-3a8661180ed3" /><br>
 checking if user exists<br>
-<img width="1087" height="839" alt="image" src="https://github.com/user-attachments/assets/baffdb85-822b-4431-b3af-2821592b5c57" /><br>
+<details>
+  <summary>source code</summary><br>
+        <img width="1087" height="839" alt="image" src="https://github.com/user-attachments/assets/baffdb85-822b-4431-b3af-2821592b5c57" /><br>
+</details>
 all we are able to know is if the user exists or not or if there was an error with the query<br>
 the request:<br>
 <img width="757" height="287" alt="image" src="https://github.com/user-attachments/assets/60ad49fd-1965-47ff-ad9f-19337029ed60" /><br>
@@ -285,8 +296,10 @@ and get the password!<br>
 username: natas16<br>
 password: Xm6XEeRN3zsGjRDqBPmuqAVV65k7e3Gb<br>
 <img width="1100" height="520" alt="image" src="https://github.com/user-attachments/assets/d06045fe-b91e-4346-9952-bef3ba377f6d" /><br>
-source code:<br>
-<img width="1085" height="682" alt="image" src="https://github.com/user-attachments/assets/7a5d4468-6ced-4022-8e9e-ce5337ecb60e" /><br>
+<details>
+  <summary>source code</summary><br>
+        <img width="1085" height="682" alt="image" src="https://github.com/user-attachments/assets/7a5d4468-6ced-4022-8e9e-ce5337ecb60e" /><br>
+</details>
 after researching a lot a Realized that the regex misses banning "$" and "()"<br>
 so if I do something like this:<br>
 <img width="644" height="272" alt="image" src="https://github.com/user-attachments/assets/25bac6d6-7f77-4b62-a8f6-8fe0bc9ac7a3" /><br>
@@ -306,8 +319,10 @@ Gave me this beautiful triangle and the password!<br>
 username: natas17<br>
 password: KLdAM3VZux8o6TbkbhuaG5KtYjI77tfx<br>
 <img width="1100" height="520" alt="image" src="https://github.com/user-attachments/assets/f0d6ea24-66a8-4037-ac22-3c6dc179c15e" /><br>
-source code:<br>
-<img width="1076" height="843" alt="image" src="https://github.com/user-attachments/assets/8f591aa0-767a-4fea-87af-aefb36547b4a" /><br>
+<details>
+  <summary>source code</summary><br>
+        <img width="1076" height="843" alt="image" src="https://github.com/user-attachments/assets/8f591aa0-767a-4fea-87af-aefb36547b4a" /><br>
+</details>
 this looks familiar from level 15...<br>
 except this time the echos are commented out :(<br>
 I chose to do it with SLEEP command in mysql.<br>
@@ -324,8 +339,10 @@ I got the password to natas18!<br>
 username: natas18<br>
 password: fDGn2A6Gsc0BUp3bZw0RNXpg0PZt40op<br>
 <img width="1100" height="520" alt="image" src="https://github.com/user-attachments/assets/5795abf2-28e9-42d1-aa7e-74fe760c532c" /><br>
-source code:<br>
-<img width="551" height="790" alt="image" src="https://github.com/user-attachments/assets/fed2e07b-6d1b-42cb-93d9-80e64255c12d" /><br>
+<details>
+  <summary>source code</summary><br>
+        <img width="551" height="790" alt="image" src="https://github.com/user-attachments/assets/fed2e07b-6d1b-42cb-93d9-80e64255c12d" /><br>
+</details>
 looks like no metter what i put in i get this back:<br>
 <img width="628" height="185" alt="image" src="https://github.com/user-attachments/assets/12bc77a3-49a0-4c3a-ace2-36704fd46b54" /><br>
 lets look at the message in burp suite:<br>
