@@ -323,6 +323,57 @@ I got the password to natas18!
 "Surf the web"<br>
 username: natas18<br>
 password: fDGn2A6Gsc0BUp3bZw0RNXpg0PZt40op<br>
+<img width="1100" height="520" alt="image" src="https://github.com/user-attachments/assets/5795abf2-28e9-42d1-aa7e-74fe760c532c" />
+source code:
+<img width="551" height="790" alt="image" src="https://github.com/user-attachments/assets/fed2e07b-6d1b-42cb-93d9-80e64255c12d" />
+looks like no metter what i put in i get this back:
+<img width="628" height="185" alt="image" src="https://github.com/user-attachments/assets/12bc77a3-49a0-4c3a-ace2-36704fd46b54" />
+lets look at the message in burp suite:
+<img width="762" height="208" alt="image" src="https://github.com/user-attachments/assets/718dc970-b999-4ffd-806e-6d366f23005c" />
+looks like we can just change our cookie and maybe fine a working admin session!
+so i wrote this script:
+<img width="1100" height="290" alt="image" src="https://github.com/user-attachments/assets/844ea511-686a-4b6c-897d-2b179b38823a" />
+that will check every session id possible and more :) and try to find a session where admin is logged in.
+and we found it!
+<img width="115" height="30" alt="image" src="https://github.com/user-attachments/assets/e6621c9c-5765-47a2-863d-d37a8d53134e" />
+now all i have to do is send this message:
+<img width="1100" height="165" alt="image" src="https://github.com/user-attachments/assets/c3280584-bfde-4b70-90ee-0b224963c9dd" />
+and we got it!
+<img width="644" height="223" alt="image" src="https://github.com/user-attachments/assets/2dd4c20d-0bea-48bd-9c19-c72684e60421" />
+### Level 19:<br>
+"Surf the web"<br>
+username: natas19<br>
+password: qvwtMqAcVSBlf7HE3sw9pljhqqPF9MMT<br>
+<img width="1100" height="520" alt="image" src="https://github.com/user-attachments/assets/464cce08-b6d1-4071-b977-a48660e54f32" />
+it tells us that this uses the same source code as the last one and doesn't give us the source code like the other level.
+let's guess and see what happens...
+<img width="631" height="318" alt="image" src="https://github.com/user-attachments/assets/5d9e68ea-9d6d-4173-9b42-20b8d6f63891" />
+we got this again:
+<img width="633" height="231" alt="image" src="https://github.com/user-attachments/assets/99f44c92-e4dc-40d2-accb-0d8ae72098b8" />
+let's see what cookie we got this time
+<img width="267" height="51" alt="image" src="https://github.com/user-attachments/assets/479ae2c1-1c10-4f75-a7d0-8edbb967cbd9" />
+some random value...
+but maybe not so random, this looks like hex value let put it in the cyber chef:
+<img width="771" height="572" alt="image" src="https://github.com/user-attachments/assets/58e6d989-08bf-44f9-8c71-dd03ea727237" />
+interesting
+let's write a script:
+<img width="1100" height="360" alt="image" src="https://github.com/user-attachments/assets/bf1ffca0-dacc-44ae-b410-653e4400f576" />
+it is basically the same as the last one except for the line I marked where I a changed the value to be the hex value of "<number>-admin"
+and when I ran it:
+<img width="122" height="23" alt="image" src="https://github.com/user-attachments/assets/560bf09a-210e-4f30-8bed-212da6f0d483" />
+all we need to do is calculate the value we need to change the cookie to be:
+<img width="746" height="537" alt="image" src="https://github.com/user-attachments/assets/836f8930-f3f7-4588-a929-58cb36fc7e3a" />
+or I could have printed it in the code if i was smarter😒
+and send the request:
+<img width="1100" height="230" alt="image" src="https://github.com/user-attachments/assets/8bd4b320-b7ad-4c45-927b-8cc4e40b7185" />
+and i got it!
+<img width="644" height="361" alt="image" src="https://github.com/user-attachments/assets/ab70edab-6e36-4b9b-9d6a-2614ab8f6d10" />
+### Level 20:<br>
+"Surf the web"<br>
+username: natas20<br>
+password: slOKYGsjlJhaqKliGvrgWAzln0JyrWao<br>
+
+
 
 
 I
