@@ -476,7 +476,7 @@ password: CH1OBxJy8uAxMM15Nx6VXSMwcJbBbnS5<br>
         <img width="654" height="190" alt="image" src="https://github.com/user-attachments/assets/639b9a97-535d-4c55-9247-ad4e1d082d2f" />
 </details>
 ok, first of all i need to learn what is the command "strstr":<br>
-I found this site: https://www.php.net/manual/en/function.strstr.php<br>
+I found this site -> <https://www.php.net/manual/en/function.strstr.php><br>
 and it says:<br>
 <img width="871" height="167" alt="image" src="https://github.com/user-attachments/assets/85c12f0f-8de8-4880-a827-b3fd0481a14c" /><br>
 so basically my password needs to contain the string "iloveyou", i can do it!<br>
@@ -484,7 +484,7 @@ and then it needs to be bigger then 10???<br>
 i thought that maybe it means the length of the string so I tried "iloveyouiloveyou", but it didn't work:<br>
 <img width="631" height="238" alt="image" src="https://github.com/user-attachments/assets/1284be46-a3f9-41df-8320-fe3b37485a2b" /><br>
 so it was time to learn on the internet...<br>
-I came across https://stackoverflow.com/questions/9257685/weird-php-string-integer-comparison-and-conversion<br>
+I came across -> <https://stackoverflow.com/questions/9257685/weird-php-string-integer-comparison-and-conversion><br>
 It said the this thing happened to him:<br>
 <img width="737" height="264" alt="image" src="https://github.com/user-attachments/assets/a306c65a-4a97-4a59-8418-8822f8d359b8" /><br>
 maybe I can use it!<br>
