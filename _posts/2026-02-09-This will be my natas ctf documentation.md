@@ -497,8 +497,30 @@ probably some kind of weird handling of str compared to int by php🤷‍♂️<
 "Surf the web"<br>
 username: natas24<br>
 password: shlL4BvOtawNCd81dwdKRHFzmTEjYYQX<br>
-
-
+<img width="1100" height="520" alt="image" src="https://github.com/user-attachments/assets/e4709c9a-b731-42f8-b152-cd5e7f6dd2a8" /><br>
+<details>
+  <summary>source code</summary><br>
+        <img width="534" height="193" alt="image" src="https://github.com/user-attachments/assets/40176871-f66e-429d-8d5c-3bb9d0c635c4" />
+</details>
+ok let's find vulnerabilities in strcmp:<br>
+I found this site -> <https://x7331.gitbook.io/boxes/tl-dr/web/authentication/php-strcmp><br>
+with this in it:<br>
+<img width="787" height="257" alt="image" src="https://github.com/user-attachments/assets/55258caa-8082-45e9-9947-b664ac5ebc14" /><br>
+This sounds exactly like our scenario right now...<br>
+lets try:<br>
+<img width="415" height="42" alt="image" src="https://github.com/user-attachments/assets/bcfe6f2a-2d52-4ca6-aa15-3724c0d81c10" /><br>
+<img width="654" height="340" alt="image" src="https://github.com/user-attachments/assets/a5e2b641-8d21-4cfb-a5f8-b470a9f52356" /><br>
+fun!<br>
+### Level 25:<br>
+"I aint reading all that"<br>
+username: natas25<br>
+password: UJEF5OAHF1eW3lqkpdCDM7ow4syzh4oo<br>
+<img width="1100" height="520" alt="image" src="https://github.com/user-attachments/assets/d92804a0-95ee-42ee-b41e-d1f28de57852" />
+<details>
+  <summary>source code</summary><br>
+        <img width="610" height="741" alt="image" src="https://github.com/user-attachments/assets/5d067f1b-0aa3-4411-8bc3-b935ad18d348" />
+        <img width="617" height="279" alt="image" src="https://github.com/user-attachments/assets/95ca73fa-5434-4683-8719-1b81973d7f8a" />
+</details>
 
 
 
