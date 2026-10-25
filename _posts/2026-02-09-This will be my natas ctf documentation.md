@@ -397,6 +397,50 @@ password: slOKYGsjlJhaqKliGvrgWAzln0JyrWao<br>
 </details>
 Like the previous challenges I don't see any way of altering the value in $_SESSION["admin"] to make it 1.<br>
 means that I have to find an already existing admin session and using it.<br>
+after many tries a never found any similarities between sids or any piece of knowledge about how the sid is being generated.<br>
+so i started looking more at the source code wand found a problem in the "myread" and "mywrite" functions:<br>
+<img width="862" height="373" alt="image" src="https://github.com/user-attachments/assets/2518adc1-a9a3-4545-beb3-6d16a1b1a8a0" /><br>
+we can see here that the myread functions reads the session file and parses the data back to keys by:<br>
+  1. splitting the data to array based on new lines ("\n")<br>
+  2. splitting each value in the array to key and value based on space (" ")<br>
+and we can see in the my write function:<br>
+<img width="899" height="373" alt="image" src="https://github.com/user-attachments/assets/4524fe85-c9cb-4c70-a67f-2930c98e560c" /><br>
+that it will basically write whatever we put in "name" key to the file<br>
+So I started by typing in the text box:<br>
+<img width="690" height="265" alt="image" src="https://github.com/user-attachments/assets/0c7d7604-f43c-4509-9812-76c8b550cc8b" /><br>
+and the refreshing the page but it didn't work 😒.<br>
+I didn't know what the problem was until i played around in the cybercheff with the url encoding and accidentally pressed the ENTER key on my keyboard.<br>
+and the i noticed that is produced a different encoding then the \n encoding I send with my current strategy.<br>
+so I tried sending the new url encoding:<br>
+<img width="725" height="547" alt="image" src="https://github.com/user-attachments/assets/9f7c3d37-2ec4-4975-9128-a10b6044a59a" /><br>
+this time I chose the  value in the burp suit of course:<br>
+<img width="1208" height="265" alt="image" src="https://github.com/user-attachments/assets/92731164-c1f5-4354-9fa1-bd173c3c459f" /><br>
+And yes I also chose to use the sid "admin" for this just cause I can:<br>
+so course I refreshed the page and change the sid to "admin" again:<br>
+<img width="1214" height="188" alt="image" src="https://github.com/user-attachments/assets/bbcf175f-674e-4d5f-a449-826d9f8eb340" /><br>
+And it workedddd!!!!<br>
+<img width="690" height="309" alt="image" src="https://github.com/user-attachments/assets/6fefd235-9847-4292-bf2e-c12222bf4801" /><br>
+### Level 21:<br>
+"Surf the web"<br>
+username: natas21<br>
+password: 7meHZ1l2zPoK2v1qfTUxq4Ydfja4UlmU<br>
+<img width="1100" height="520" alt="image" src="https://github.com/user-attachments/assets/88f8f059-b07f-4565-97b5-8df94f3daaea" /><br>
+<details>
+  <summary>source code</summary><br>
+        <img width="794" height="271" alt="image" src="https://github.com/user-attachments/assets/9cfe39ab-4d8e-48ac-a322-fb6b86bdb37b" />
+</details>
+this time we have 2 sites 😎:<br>
+lets see the second one:<br>
+<img width="1100" height="520" alt="image" src="https://github.com/user-attachments/assets/4b712365-0402-4396-9888-5e8133666bed" /><br>
+<details>
+  <summary>source code of the second site</summary><br>
+        <img width="953" height="679" alt="image" src="https://github.com/user-attachments/assets/3bf95e73-54c6-4b78-801f-42f45264fe48" />
+</details>
+
+
+
+
+
 
 
 I
