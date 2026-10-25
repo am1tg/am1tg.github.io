@@ -414,10 +414,10 @@ and the i noticed that is produced a different encoding then the \n encoding I s
 so I tried sending the new url encoding:<br>
 <img width="725" height="547" alt="image" src="https://github.com/user-attachments/assets/9f7c3d37-2ec4-4975-9128-a10b6044a59a" /><br>
 this time I chose the  value in the burp suit of course:<br>
-<img width="1208" height="265" alt="image" src="https://github.com/user-attachments/assets/92731164-c1f5-4354-9fa1-bd173c3c459f" /><br>
+<img width="1050" height="230" alt="image" src="https://github.com/user-attachments/assets/92731164-c1f5-4354-9fa1-bd173c3c459f" /><br>
 And yes I also chose to use the sid "admin" for this just cause I can:<br>
 so course I refreshed the page and change the sid to "admin" again:<br>
-<img width="1214" height="188" alt="image" src="https://github.com/user-attachments/assets/bbcf175f-674e-4d5f-a449-826d9f8eb340" /><br>
+<img width="1050" height="155" alt="image" src="https://github.com/user-attachments/assets/bbcf175f-674e-4d5f-a449-826d9f8eb340" /><br>
 And it workedddd!!!!<br>
 <img width="690" height="309" alt="image" src="https://github.com/user-attachments/assets/6fefd235-9847-4292-bf2e-c12222bf4801" /><br>
 ### Level 21:<br>
@@ -435,6 +435,45 @@ lets see the second one:<br>
 <details>
   <summary>source code of the second site</summary><br>
         <img width="953" height="679" alt="image" src="https://github.com/user-attachments/assets/3bf95e73-54c6-4b78-801f-42f45264fe48" />
+</details>
+based on the source code of the second site looks like i can pass any key in the post request and it will be added as key to the session.<br>
+I want to try to pass an admin key...<br>
+so this is the post request sent by the second site when I press the "update" button:<br>
+<img width="1050" height="240" alt="image" src="https://github.com/user-attachments/assets/9dcce8b6-18fc-41a9-b623-c82846745a7d" /><br>
+And i will add the admin key:<br>
+<img width="1050" height="238" alt="image" src="https://github.com/user-attachments/assets/6710bd43-991a-4935-89cb-d0bea21060a2" /><br>
+and i changed the sid to "admin" cause i can 🙃<br>
+now I refreshed the first site and choose the "admin" session:<br>
+<img width="1050" height="182" alt="image" src="https://github.com/user-attachments/assets/dabae117-b6df-4126-902b-d526e5429830" /><br>
+yesss it worked:<br>
+<img width="638" height="290" alt="image" src="https://github.com/user-attachments/assets/a957ee38-78cd-4f46-ad6a-1ca326bdb1c0" /><br>
+### Level 22:<br>
+"Surf the web"<br>
+username: natas22<br>
+password: 964laB0r7TuDqJj5b3HFtwsQoc0GhjBF<br>
+<img width="1100" height="520" alt="image" src="https://github.com/user-attachments/assets/e0fae498-5524-4f2d-8772-d1505d65931a" /><br>
+<details>
+  <summary>source code</summary><br>
+        <img width="1000" height="620" alt="image" src="https://github.com/user-attachments/assets/a82380e2-1870-4dda-bee2-b1447eb35bec" />
+</details>
+looks like all we have to do is add send in the GET request the key "revelio", like this:<br>
+<img width="380" height="33" alt="image" src="https://github.com/user-attachments/assets/ab4ca7ab-8602-452a-9821-a84f9427a8dc" /><br>
+but this looks like it doesn't do anything, the screen stays the same:<br>
+<img width="650" height="149" alt="image" src="https://github.com/user-attachments/assets/6c78f879-a339-4c5f-ac2b-0be7d5561ecf" /><br>
+but if we look at the first path of the source code we will se this lines:<br>
+<img width="693" height="97" alt="image" src="https://github.com/user-attachments/assets/67a2c4ff-64b3-4f68-bc86-63b9f94881b4" /><br>
+looks like if we are not admins it just sends an empty GET request so it will refresh the page.<br>
+but luckily the burp suit saves the http responses history and if we look at it we will see:<br>
+<img width="1050" height="505" alt="image" src="https://github.com/user-attachments/assets/198403e9-b6ce-4336-a837-dd077930a224" /><br>
+A response with the credentials to natas23 !!!<br>
+### Level 23:<br>
+"Surf the web"<br>
+username: natas23<br>
+password: CH1OBxJy8uAxMM15Nx6VXSMwcJbBbnS5<br>
+<img width="1100" height="520" alt="image" src="https://github.com/user-attachments/assets/b6436ef2-2738-4d78-8055-34d1f4ff5dbb" /><br>
+<details>
+  <summary>source code</summary><br>
+        <img width="654" height="190" alt="image" src="https://github.com/user-attachments/assets/639b9a97-535d-4c55-9247-ad4e1d082d2f" />
 </details>
 
 
