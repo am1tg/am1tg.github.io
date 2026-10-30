@@ -521,8 +521,51 @@ password: UJEF5OAHF1eW3lqkpdCDM7ow4syzh4oo<br>
         <img width="610" height="741" alt="image" src="https://github.com/user-attachments/assets/5d067f1b-0aa3-4411-8bc3-b935ad18d348" />
         <img width="617" height="279" alt="image" src="https://github.com/user-attachments/assets/95ca73fa-5434-4683-8719-1b81973d7f8a" />
 </details>
-
-
+ok so now i don't see any way of the site telling us what the password for natas26 is. we will need to dig through the files and find it ourself!<br>
+looks like the most important thing in the source code is the safeinclude function:<br>
+<img width="466" height="384" alt="image" src="https://github.com/user-attachments/assets/022df51c-0852-4f81-8e87-65bcb7177774" /><br>
+we can see it is being called by the setLanguage and its input is the value we put in "lang".<br>
+first vulnerability I see is the "pass traversal handling" at the start of the "safeinclude" function<br>
+it just super easy to bypass.<br>
+its just removes any "../" in the string we put, but it does it only one time.<br>
+so if we input "..././" it will remove the "../" and leave "../" after it:<br>
+<img width="196" height="240" alt="image" src="https://github.com/user-attachments/assets/0039440b-80e2-406d-a09f-74a475b7bf29" /><br>
+here is a proof of it working:<br>
+<img width="1100" height="740" alt="image" src="https://github.com/user-attachments/assets/62cb6a0d-af6c-435c-b421-14f92b10b39d" /><br>
+i can even read the session logs by checking my session id in the cookies:<br>
+<img width="205" height="57" alt="image" src="https://github.com/user-attachments/assets/a395622c-bfdc-45c9-9903-004f857d2fc1" /><br>
+and by the path we can see in the "logRequest" function:<br>
+<img width="541" height="122" alt="image" src="https://github.com/user-attachments/assets/271abdef-ff92-45e2-bf44-2604c53473cf" /><br>
+path traversal our way to reading the file:<br>
+<img width="1100" height="552" alt="image" src="https://github.com/user-attachments/assets/b225cf71-907a-4f5c-9806-083ada54b7d2" /><br>
+now I was stuck because I could read any file i want, even the etc/passwd:<br>
+<img width="1100" height="972" alt="image" src="https://github.com/user-attachments/assets/7d4c86ae-d27b-4e28-98f7-ae418cab0390" /><br>
+But i can't access any file over "natas_webpass" directory because of this:<br>
+<img width="442" height="87" alt="image" src="https://github.com/user-attachments/assets/5dc9917b-b434-4f0e-bcb1-58500a6282b9" /><br>
+until i stambled across this site -> <https://www.vulnsy.com/cheat-sheets/lfi><br>
+in which i found this:<br>
+<img width="1100" height="148" alt="image" src="https://github.com/user-attachments/assets/d028544a-504a-4a69-8bc7-d03f55f7c1bb" /><br>
+this gave me an idea because our site also logs the user agent I send it:<br>
+<img width="595" height="128" alt="image" src="https://github.com/user-attachments/assets/bba7c008-45e8-4950-be4f-fdd9762f675f" /><br>
+so i tried it, first we change the "User-Agent" field using burp suite:<br>
+<img width="1100" height="190" alt="image" src="https://github.com/user-attachments/assets/86e05943-1d5c-4f99-a7ab-dc6f45fec8fc" /><br>
+pay attention to the value I pass in "lang" as it needs to be something that will trigger the logging function!<br>
+now we have a web shell!<br>
+<img width="1100" height="684" alt="image" src="https://github.com/user-attachments/assets/37753b55-fca2-433f-8687-6d473ca64de9" /><br>
+all we need to do now is read the "/etc/natas_webpass/natas26" file and find the password:<br>
+<img width="1100" height="740" alt="image" src="https://github.com/user-attachments/assets/b5eddaa4-dcdc-481f-9454-9011628e255a" /><br>
+yesssss!<br>
+### Level 26:<br>
+"I aint reading all that"<br>
+username: natas26<br>
+password: 3CApdpjqI4UYPxY8mHQWUdFPGH9BoUTT<br>
+<img width="1100" height="520" alt="image" src="https://github.com/user-attachments/assets/e45685e7-aaa8-45a1-8972-e643165ebea1" />
+<details>
+  <summary>source code</summary><br>
+        <img width="729" height="719" alt="image" src="https://github.com/user-attachments/assets/e1967773-bd54-4889-983c-38a255028475" />
+        <img width="732" height="804" alt="image" src="https://github.com/user-attachments/assets/4f790891-81bb-43d0-8588-8b99447ef490" />
+        <img width="635" height="332" alt="image" src="https://github.com/user-attachments/assets/e6707e46-755f-4b73-91ab-c461d89b3d91" />
+</details>
 
 
 
