@@ -1,7 +1,12 @@
 hello!!!<br>
 let's do a ctf together<br>
+## Table of contents
+- [Level 0](#level-0)
+- [Level 1](#level-1)
+- [Level 2](#level-2)
+- [Level 3](#level-3)
 
-### Level 0:<br>
+### Level 0:{: #level-0 }
 "we are all starting somewhere"<br>
 username: natas0<br>
 password: natas0<br>
@@ -11,7 +16,7 @@ let's right click and choose:<br>
 and BOOM!!!<br>
 <img width="1084" height="366" alt="image" src="https://github.com/user-attachments/assets/45b2dc20-7aef-44f1-8182-93f4461c594f" /><br>
 We found the password!<br>
-### Level 1:<br>
+### Level 1:<br>{: #level-1 }
 "moving on"<br>
 username: natas1<br>
 password: scfWG6qNEIdzqVyfRwEGXyNUfFZkZeQ7<br>
@@ -19,7 +24,7 @@ password: scfWG6qNEIdzqVyfRwEGXyNUfFZkZeQ7<br>
 looks like we cand right click this time...<br>
 but we can press ctrl+U to get to the source page:<br>
 <img width="1089" height="389" alt="image" src="https://github.com/user-attachments/assets/e4df494f-f0bf-4e34-a0b3-a5bc4be45947" /><br>
-### Level 2:<br>
+### Level 2:<br>{: #level-2 }
 "This is easy"<br>
 username: natas2<br>
 password: vsDOxoXyq3wckCP1ZmTZ71ngIA606odB<br>
@@ -32,7 +37,7 @@ let's try:<br>
 <img width="556" height="330" alt="image" src="https://github.com/user-attachments/assets/5fd47b24-9ce2-416a-bcd9-ade9c91c9c9c" /><br>
 nice! what is in this users.txt file?<br>
 <img width="365" height="152" alt="image" src="https://github.com/user-attachments/assets/16df0ec1-fb01-43e3-9688-ed1e51d78f22" /><br>
-### Level 3:<br>
+### Level 3:<br>{: #level-3 }
 "To the next level"<br>
 username: natas3<br>
 password: K30JrSRHzjxq3paUQuwozY4MNvmNFyhI<br>
