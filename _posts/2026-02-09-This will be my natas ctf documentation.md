@@ -5,8 +5,31 @@ let's do a ctf together<br>
 - [Level 1](#level-1)
 - [Level 2](#level-2)
 - [Level 3](#level-3)
+- [Level 4](#level-4)
+- [Level 5](#level-5)
+- [Level 6](#level-6)
+- [Level 7](#level-7)
+- [Level 8](#level-8)
+- [Level 9](#level-9)
+- [Level 10](#level-10)
+- [Level 11](#level-11)
+- [Level 12](#level-12)
+- [Level 13](#level-13)
+- [Level 14](#level-14)
+- [Level 15](#level-15)
+- [Level 16](#level-16)
+- [Level 17](#level-17)
+- [Level 18](#level-18)
+- [Level 19](#level-19)
+- [Level 20](#level-20)
+- [Level 21](#level-21)
+- [Level 22](#level-22)
+- [Level 23](#level-23)
+- [Level 24](#level-24)
+- [Level 25](#level-25)
+- [Level 26](#level-26)
 
-### Level 0:{: #level-0 }
+### Level 0:<br>{: #level-0 }
 "we are all starting somewhere"<br>
 username: natas0<br>
 password: natas0<br>
@@ -54,7 +77,7 @@ looks good! let's try this /s3cr3t/ path:<br>
 <img width="579" height="311" alt="image" src="https://github.com/user-attachments/assets/5656bb5d-3853-4e4c-b5d4-faa070a60e6e" /><br>
 yesss<br>
 <img width="589" height="95" alt="image" src="https://github.com/user-attachments/assets/59d18d22-1133-4385-98d7-233e0262ecda" /><br>
-### Level 4:<br>
+### Level 4:<br>{: #level-4 }
 "This is only getting easier"<br>
 username: natas4<br>
 password: JDrPnuZAKyl6MkiqQGFIddrqpvgOASth<br>
@@ -65,7 +88,7 @@ this is what our request looks like:<br>
 I believe that if i change this 4 in the referer field to 5 I will be granted access:<br>
 <img width="627" height="174" alt="image" src="https://github.com/user-attachments/assets/91c5c2a5-2266-43c9-8089-4f3704e7c812" /><br>
 I was right!<br>
-### Level 5:<br>
+### Level 5:<br>{: #level-5 }
 "Give me a real challenge"<br>
 username: natas5<br>
 password: e4z2Noy3oqwPJUWzJH0dseN67Cn1sy2M<br>
@@ -76,7 +99,7 @@ This is lying!<br>
 let's change it to 1:<br>
 <img width="692" height="179" alt="image" src="https://github.com/user-attachments/assets/13e4f2cf-2de5-4339-88db-43d220e91213" /><br>
 done!<br>
-### Level 6:<br>
+### Level 6:<br>{: #level-6 }
 "You can't stop me"<br>
 username: natas6<br>
 password: 7mhjtShJAcld2NYbKHEadnhEwRn2P8VT<br>
@@ -89,7 +112,7 @@ let's see if we can access this file:<br>
 yes we can! and we got the secret -> "FOEIUWGHFEEUHOFUOIU"<br>
 why don't we submit it:<br>
 <img width="646" height="241" alt="image" src="https://github.com/user-attachments/assets/fe1f6c2f-ca59-4a97-88c3-db76d9a2b9fd" /><br>
-### Level 7:<br>
+### Level 7:<br>{: #level-7 }
 "I'm on fire!"<br>
 username: natas7<br>
 password: B1szg95UcTnrzwnF3i3TzYHlyYh8iBV0<br>
@@ -102,7 +125,7 @@ and looks like this hrefs gives a variable "page" to the "index.php" page to ret
 what would happen if we give "/etc/natas_webpass/natas8" as the path we what "index.php" to return?<br>
 <img width="1100" height="255" alt="image" src="https://github.com/user-attachments/assets/27bb1d4f-1cbf-4172-a933-306feb28d249" /><br>
 We would get the password for natas8!<br>
-### Level 8:<br>
+### Level 8:<br>{: #level-8 }
 "To infinity and beyond!"<br>
 username: natas8<br>
 password: ugXL95KQmUAJJj6bMezOlBNDyI9Imwkc<br>
@@ -118,7 +141,7 @@ This is the recipe and the output:<br>
 when we submit it ("oubWYf2kBq"):<br>
 <img width="621" height="225" alt="image" src="https://github.com/user-attachments/assets/5d2082b8-bf82-4746-bb1a-2c47fe977aa8" /><br>
 We get the next password!!!<br>
-### Level 9:<br>
+### Level 9:<br>{: #level-9 }
 "Never say never"<br>
 username: natas9<br>
 password: UdxmI27dTaXmnd1rxKQTfws6jihTdcQ9<br>
@@ -137,7 +160,7 @@ in the etc directory (because this was where the password was in level 7 and i d
 this is the output:<br>
 <img width="828" height="599" alt="image" src="https://github.com/user-attachments/assets/ccdd8331-52c9-4089-a180-8c24c737560a" /><br>
 we got the password for natas10<br>
-### Level 10:<br>
+### Level 10:<br>{: #level-10 }
 "Smells like teen spirit"<br>
 username: natas10<br>
 password: EgjlkzB6E8LJyf2Obt4q7q4ewt5ZWSNv<br>
@@ -148,7 +171,7 @@ ok looks like we need to get rid of the ";" from the last injection:<br>
 but it still works:<br>
 <img width="860" height="627" alt="image" src="https://github.com/user-attachments/assets/77830001-a4db-480c-8384-9620e14676b9" /><br>
 maybe we were over qualified for the last level ¯\\_(ツ)_/¯<br>
-### Level 11:<br>
+### Level 11:<br>{: #level-11 }
 "Welcome to the jungle"<br>
 username: natas11<br>
 password: VUMQDmuITOEHzhviLE5V0VG9cPMQkyxd<br>
@@ -187,7 +210,7 @@ and put it in my next request:<br>
 So we get this:<br>
 <img width="652" height="270" alt="image" src="https://github.com/user-attachments/assets/c3e2aa91-4601-4ae3-a4ed-a87023a41c19" /><br>
 We should have a cookie party<br>
-### Level 12:<br>
+### Level 12:<br>{: #level-12 }
 "Welcome to the jungle"<br>
 username: natas12<br>
 password: EAGkE8uzFTxeoTT2mMst9Xy7PX6guEng<br>
@@ -219,7 +242,7 @@ I'm going to run this command -> ` grep -r -E '\b[0-9a-zA-Z]{32}\b' * /etc ;`<br
 because if it ain't broken don't fix it<br>
 <img width="456" height="49" alt="image" src="https://github.com/user-attachments/assets/d4677097-5f71-43c1-90b2-0d2e9def36a4" /><br>
 and we found our next password!<br>
-### Level 13:<br>
+### Level 13:<br>{: #level-13 }
 "Surf the web"<br>
 username: natas13<br>
 password: g8ba0olAzaSJuyS4gnmbdVVigAICLG1k<br>
@@ -254,7 +277,7 @@ we have a webshell!<br>
 again I will use: `grep -r -E '\b[0-9a-zA-Z]{32}\b' /etc`<br>
 and we found it!<br>
 <img width="432" height="45" alt="image" src="https://github.com/user-attachments/assets/e3b68734-ae83-404c-867b-53ba061e9d9e" /><br>
-### Level 14:<br>
+### Level 14:<br>{: #level-14 }
 "Surf the web"<br>
 username: natas14<br>
 password: A0xXu2x9FW8rb8OSQ4ei6n5VBbLUz8h8<br>
@@ -269,7 +292,7 @@ this is mysql so "#" is the char to use to comment out the rest of the query<br>
 this shuold do the job...<br>
 <img width="640" height="188" alt="image" src="https://github.com/user-attachments/assets/01b3f083-55de-4fbf-ac74-80071adc1870" /><br>
 nice!<br>
-### Level 15:<br>
+### Level 15:<br>{: #level-15 }
 "Surf the web"<br>
 username: natas15<br>
 password: GB6USCJYJjwLyYhZUNkE1NwDueiTow6g<br>
@@ -296,7 +319,7 @@ so now i can use this script:<br>
 <img width="1100" height="550" alt="image" src="https://github.com/user-attachments/assets/36447313-e908-400f-b51c-5aba147fd563" /><br>
 and get the password!<br>
 <img width="286" height="48" alt="image" src="https://github.com/user-attachments/assets/ea4c945e-315f-49ad-a35a-6ccbe16c0306" /><br>
-### Level 16:<br>
+### Level 16:<br>{: #level-16 }
 "Surf the web"<br>
 username: natas16<br>
 password: Xm6XEeRN3zsGjRDqBPmuqAVV65k7e3Gb<br>
@@ -319,7 +342,7 @@ so again I wrote a script:<br>
 and running it:<br>
 <img width="429" height="531" alt="image" src="https://github.com/user-attachments/assets/83de0669-bb9c-444a-bc83-55d0676a679a" /><br>
 Gave me this beautiful triangle and the password!<br>
-### Level 17:<br>
+### Level 17:<br>{: #level-17 }
 "Surf the web"<br>
 username: natas17<br>
 password: KLdAM3VZux8o6TbkbhuaG5KtYjI77tfx<br>
@@ -339,7 +362,7 @@ so I made this script:<br>
 and when i ran it (it worked better in the cmd):<br>
 <img width="307" height="78" alt="image" src="https://github.com/user-attachments/assets/ca414fa7-1c33-4beb-9610-2d4a0e573022" /><br>
 I got the password to natas18!<br>
-### Level 18:<br>
+### Level 18:<br>{: #level-18 }
 "Surf the web"<br>
 username: natas18<br>
 password: fDGn2A6Gsc0BUp3bZw0RNXpg0PZt40op<br>
@@ -362,7 +385,7 @@ now all i have to do is send this message:<br>
 <img width="1100" height="165" alt="image" src="https://github.com/user-attachments/assets/c3280584-bfde-4b70-90ee-0b224963c9dd" /><br>
 and we got it!<br>
 <img width="644" height="223" alt="image" src="https://github.com/user-attachments/assets/2dd4c20d-0bea-48bd-9c19-c72684e60421" /><br>
-### Level 19:<br>
+### Level 19:<br>{: #level-19 }
 "Surf the web"<br>
 username: natas19<br>
 password: qvwtMqAcVSBlf7HE3sw9pljhqqPF9MMT<br>
@@ -390,7 +413,7 @@ and send the request:<br>
 <img width="1100" height="230" alt="image" src="https://github.com/user-attachments/assets/8bd4b320-b7ad-4c45-927b-8cc4e40b7185" /><br>
 and i got it!<br>
 <img width="644" height="361" alt="image" src="https://github.com/user-attachments/assets/ab70edab-6e36-4b9b-9d6a-2614ab8f6d10" /><br>
-### Level 20:<br>
+### Level 20:<br>{: #level-20 }
 "Surf the web"<br>
 username: natas20<br>
 password: slOKYGsjlJhaqKliGvrgWAzln0JyrWao<br>
@@ -425,7 +448,7 @@ so course I refreshed the page and change the sid to "admin" again:<br>
 <img width="1050" height="155" alt="image" src="https://github.com/user-attachments/assets/bbcf175f-674e-4d5f-a449-826d9f8eb340" /><br>
 And it workedddd!!!!<br>
 <img width="690" height="309" alt="image" src="https://github.com/user-attachments/assets/6fefd235-9847-4292-bf2e-c12222bf4801" /><br>
-### Level 21:<br>
+### Level 21:<br>{: #level-21 }
 "Surf the web"<br>
 username: natas21<br>
 password: 7meHZ1l2zPoK2v1qfTUxq4Ydfja4UlmU<br>
@@ -452,7 +475,7 @@ now I refreshed the first site and choose the "admin" session:<br>
 <img width="1050" height="182" alt="image" src="https://github.com/user-attachments/assets/dabae117-b6df-4126-902b-d526e5429830" /><br>
 yesss it worked:<br>
 <img width="638" height="290" alt="image" src="https://github.com/user-attachments/assets/a957ee38-78cd-4f46-ad6a-1ca326bdb1c0" /><br>
-### Level 22:<br>
+### Level 22:<br>{: #level-22 }
 "Surf the web"<br>
 username: natas22<br>
 password: 964laB0r7TuDqJj5b3HFtwsQoc0GhjBF<br>
@@ -471,7 +494,7 @@ looks like if we are not admins it just sends an empty GET request so it will re
 but luckily the burp suit saves the http responses history and if we look at it we will see:<br>
 <img width="1050" height="505" alt="image" src="https://github.com/user-attachments/assets/198403e9-b6ce-4336-a837-dd077930a224" /><br>
 A response with the credentials to natas23 !!!<br>
-### Level 23:<br>
+### Level 23:<br>{: #level-23 }
 "Surf the web"<br>
 username: natas23<br>
 password: CH1OBxJy8uAxMM15Nx6VXSMwcJbBbnS5<br>
@@ -498,7 +521,7 @@ what if i try this:<br>
 it worked!!!<br>
 <img width="632" height="279" alt="image" src="https://github.com/user-attachments/assets/81f8f47c-aa23-4bf3-8b85-3d98095cfde2" /><br>
 probably some kind of weird handling of str compared to int by php🤷‍♂️<br>
-### Level 24:<br>
+### Level 24:<br>{: #level-24 }
 "Surf the web"<br>
 username: natas24<br>
 password: shlL4BvOtawNCd81dwdKRHFzmTEjYYQX<br>
@@ -516,7 +539,7 @@ lets try:<br>
 <img width="415" height="42" alt="image" src="https://github.com/user-attachments/assets/bcfe6f2a-2d52-4ca6-aa15-3724c0d81c10" /><br>
 <img width="654" height="340" alt="image" src="https://github.com/user-attachments/assets/a5e2b641-8d21-4cfb-a5f8-b470a9f52356" /><br>
 fun!<br>
-### Level 25:<br>
+### Level 25:<br>{: #level-25 }
 "I aint reading all that"<br>
 username: natas25<br>
 password: UJEF5OAHF1eW3lqkpdCDM7ow4syzh4oo<br>
@@ -560,7 +583,7 @@ now we have a web shell!<br>
 all we need to do now is read the "/etc/natas_webpass/natas26" file and find the password:<br>
 <img width="1100" height="740" alt="image" src="https://github.com/user-attachments/assets/b5eddaa4-dcdc-481f-9454-9011628e255a" /><br>
 yesssss!<br>
-### Level 26:<br>
+### Level 26:<br>{: #level-26 }
 "I aint reading all that"<br>
 username: natas26<br>
 password: 3CApdpjqI4UYPxY8mHQWUdFPGH9BoUTT<br>
